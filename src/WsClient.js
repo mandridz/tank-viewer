@@ -30,7 +30,7 @@ class WsClient extends React.Component {
   }
 
   sendRefreshMessage() {
-    this.connection.send('REFRESH');
+    this.connection.send('REFRESH'); 
   };
 
   sendMessasgeToPump(id) {
@@ -41,7 +41,7 @@ class WsClient extends React.Component {
 
     return  null;
   }
-  
+
 };
 
 export default WsClient;
