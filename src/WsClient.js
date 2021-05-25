@@ -16,11 +16,11 @@ class WsClient extends React.Component {
       console.log('Message received');
     };
 
-    this.connection.onclose = () => {
+    this.connection.onclose = () => { 
       console.log('Disconnected.');
     }
 
-    this.connection.onerror = err => { 
+    this.connection.onerror = err => {
       console.log('Error: ' + err.data);
     };
 
