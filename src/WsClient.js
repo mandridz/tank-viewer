@@ -20,7 +20,7 @@ class WsClient extends React.Component {
       console.log('Disconnected.');
     }
 
-    this.connection.onerror = err => {
+    this.connection.onerror = err => { 
       console.log('Error: ' + err.data);
     };
 
@@ -30,7 +30,7 @@ class WsClient extends React.Component {
   }
 
   sendRefreshMessage() {
-    this.connection.send('REFRESH'); 
+    this.connection.send('REFRESH');
   };
 
   sendMessasgeToPump(id) {
